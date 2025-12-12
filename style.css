@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333;
+    padding: 1em;
+    color: #fff;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 10%; /* Add margin to create space around the sidebar */
+    
+}
+
+
+/* Custom scrollbar styling */
+aside::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+aside::-webkit-scrollbar-track {
+    background: #444; /* Color of the scrollbar track */
+    border-radius: 4px;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px;
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+    background: #aaa; /* Color of the scrollbar thumb on hover */
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add some spacing between categories */
+    margin: 0 10px;
+}
+
+.category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%; /* Full width of the sidebar */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align text */
+}
+
+.category img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+
+.category p {
+    margin-top: 0.5em;
+    color: #333; /* Change the text color */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.category:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin-left: 200px;
+}
+
+.subcategories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subcategory {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
+}
+
+.subcategory img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+
+.subcategory h3 {
+    margin-top: 0;
+}
+
+.subcategory p {
+    margin-bottom: 1em;
+}
+
+.subcategory button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subcategory button:hover {
+    background-color: #555;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* Cart Details Styles */
+.cart-details {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    display: none;
+}
+
+.cart-details h2 {
+    margin-top: 0;
+}
+
+.cart-details p {
+    margin-bottom: 10px;
+}
+
+.cart-details button {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cart-details button:hover {
+    background-color: #555;
+}
+
+.Pay-cart {
+    background-color: #ff0000; /* Red color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Pay-cart:hover {
+    background-color: #ff3333; /* Darker red color on hover */
+}
+
+@media only screen and (max-width: 768px) {
+    
+    @import "mobile.css";
+  }
