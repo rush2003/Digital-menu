@@ -1,0 +1,37 @@
+<!-- Mobile HTML file (mobile.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Menu</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <!-- Categories Section -->
+    <section id="categories">
+    <h2 class="categories-text">Categories</h2>
+        <div class="categories-container">
+            <!-- Categories will be generated dynamically using JavaScript -->
+        </div>
+    </section>
+    <!-- Subcategories container -->
+    <div class="subcategories-container" style="display: none;"></div>
+    <!-- Cart icon -->
+<div class="cart-icon">
+    <img src="cart.png" alt="Cart Icon" width="30" height="30">
+    <span class="cart-count">0</span>
+</div>
+
+<!-- Cart details -->
+<div class="cart-details">
+    <h2>Cart Details</h2>
+    <p>Total Amount: ₹0</p>
+    <ul class="cart-list"></ul>
+    <button class="close-cart">Close</button>
+    <button class="pay-cart">Pay</button>
+</div>
+    <button class="back-button">Back</button>
+    <script src="mobile.js"></script>
+</body>
+</html>

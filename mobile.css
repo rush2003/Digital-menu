@@ -1,0 +1,206 @@
+/* Mobile CSS file (mobile.css) */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#categories {
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0 0px;
+ 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a box shadow to the container */
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.category img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.category p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Change the text color to a darker color */
+}
+
+
+/* Mobile CSS file (mobile.css) */
+
+.subcategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add some margin to the bottom */
+}
+
+.subcategory img {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.subcategory h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333; /* Change the text color */
+}
+
+.subcategory p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px; /* Add some margin to the bottom */
+}
+
+
+.subcategories-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 60px; /* Add a margin to the top of the subcategories container */
+}
+
+
+/* Mobile CSS file (mobile.css) */
+
+.back-button {
+  position: fixed;
+  display: none;
+  top: 10px;
+  left: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.back-button:hover {
+  background-color: #555;
+}
+
+.cart-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.cart-details {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  display: none;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px; /* Set a maximum height for the cart list */
+  overflow-y: auto; /* Add scrolling to the cart list */
+}
+
+.cart-list li {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.cart-list li:last-child {
+  border-bottom: none;
+}
+
+.close-cart {
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pay-cart {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #555;
+}
+
+.remove-product {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-product:hover {
+  background-color: #ff3333;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" media="screen and (max-width: 768px)" href="mobile.html">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+      </head>
+
+<body>
+    <aside>
+        <h2>Categories</h2>
+        <div class="categories-container">  
+        </div>
+    </aside>
+    <!-- Back button -->
+    <button class="back-button">Back</button>
+    <main>
+        <!-- Subcategories Section -->
+        <section id="subcategories">
+            <h2>Subcategories</h2>
+            <div class="subcategories-container">
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-icon">
+        <img src="cart.png" alt="Cart Icon" width="30" height="30">
+        <span class="cart-count">0</span> <!-- Add this element -->
+    </div>
+
+<div class="cart-details">
+    <h2>Cart Details</h2>
+    <p>Total Amount: ₹0</p>
+    <ul class="cart-list"></ul> <!-- Add this element -->
+    <button class="close-cart">Close</button>
+    <button class="Pay-cart" style="background-color: #ff0000; color: #ffffff;">Pay</button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
